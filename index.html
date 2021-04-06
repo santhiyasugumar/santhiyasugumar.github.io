@@ -70,6 +70,42 @@
 		::-webkit-scrollbar-thumb:hover {
 		  background: #555; 
 		}
+
+		.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 		</style>
 	</head>
 	<body>
@@ -114,8 +150,8 @@
 												<h2>Software Developer</h2>
 												<p>Passionate web developer, making application using the latest technologies!</p>
 												<br> 
-													<p><a class="btn btn-primary btn-learn" href="doc/santhiya.pdf" download>Download CV <i class="icon-download4"></i></a>
-													<a class="btn btn-primary btn-learn" href="doc/santhiya.pdf" target="_blank">View Portfolio <i class="icon-briefcase3"></i></a></p>
+													<p><a class="btn btn-primary btn-learn" href="doc/santhiya_resume.pdf" download>Download CV <i class="icon-download4"></i></a>
+													<a class="btn btn-primary btn-learn" href="doc/santhiya_resume.pdf" target="_blank">View Portfolio <i class="icon-briefcase3"></i></a></p>
 												</div>
 										</div>
 									</div>
@@ -334,7 +370,7 @@
 									<i class="icon-mail"></i>
 								</div>
 								<div class="colorlib-text">
-									<h4><a style="text-transform:lowercase;" href="mailto:santhiyasugumar22@gmail.com" target="_blank">santhiyasugumar22@gmail.com</a></h4>
+									<h4><a style="text-transform:lowercase;" title="gmail" href="mailto:santhiyasugumar22@gmail.com" target="_blank">santhiyasugumar22@gmail.com</a></h4>
 								</div>
 							</div>
 							
@@ -346,25 +382,22 @@
 									<h4>7339663947</h4>
 								</div>
 							</div>
-
 							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
 								<div class="colorlib-icon">
 									<i class="icon-location"></i>
 								</div>
 								<div class="colorlib-text">
-									<h4>121 Mahadhana Street, Thiruvidaimarudur, Thanjavur - 612 104.</h4>
+									<h4>121 Mahadhana Street, Thiruvidaimarudur, Thanjavur - 612 104.</h4> 
 								</div>
 							</div>
-					
 						</div>
 						<div class="col-md-6">
-							
 							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
 								<div class="colorlib-icon">
 									<i class="icon-github"></i>
 								</div>
 								<div class="colorlib-text">
-									<h4><a style="text-transform:lowercase;" href="https://github.com/santhiyasugumar/" target="_blank">https://github.com/santhiyasugumar/</a></h4>
+									<h4><a style="text-transform:lowercase;" title="github" href="https://github.com/santhiyasugumar/" target="_blank">https://github.com/santhiyasugumar/</a></h4>
 								</div>
 							</div>
 							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
@@ -372,7 +405,16 @@
 									<i class="icon-social-linkedin"></i>
 								</div>
 								<div class="colorlib-text">
-									<h4><a style="text-transform:lowercase;" href="https://www.linkedin.com/in/santhiyasugumar/" target="_blank">https://www.linkedin.com/in/santhiyasugumar/</a></h4>
+									<h4><a style="text-transform:lowercase;" title="linkedin" href="https://www.linkedin.com/in/santhiyasugumar/" target="_blank">https://www.linkedin.com/in/santhiyasugumar/</a></h4>
+								</div>
+							</div>
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<b class=""><i>M</i></b>
+								</div>
+								<span class="tooltiptext">Tooltip text</span>
+								<div class="colorlib-text">
+									<h4><a style="text-transform:lowercase;" title="Medium" href="https://santhiyasugumar22.medium.com/" target="_blank">https://santhiyasugumar22.medium.com/</a></h4>
 								</div>
 							</div>
 						
